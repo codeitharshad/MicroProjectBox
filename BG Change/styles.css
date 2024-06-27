@@ -1,0 +1,42 @@
+body {
+    background: #383838;
+}
+html {
+  margin: 0;
+}
+
+h2{
+    color: aliceblue;
+}
+
+span {
+  display: block;
+}
+.canvas {
+  margin: 100px auto 100px;
+  width: 70%;
+  text-align: center;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  border-width: 3px;
+  border: solid black 2px;
+  display: inline-block;
+}
+
+#grey {
+  background:rgb(92, 74, 194);
+}
+
+#white {
+  background: rgb(255, 44, 154);
+}
+#blue {
+  background:rgb(228, 21, 255);
+}
+#yellow {
+  background:rgb(255, 72, 72);
+}
