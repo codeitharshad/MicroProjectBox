@@ -1,0 +1,45 @@
+
+/* Center the .main-container div and its content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white; /* Set the background color of the body if needed */
+}
+
+.main-container {
+    font-weight: 100;
+    margin: 20px;
+    background-color: black; /* Set the div color to black */
+    color: white; /* Set the text color to white for better contrast */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Ensure the buttons have some basic styling */
+button {
+    color: white;
+    font-weight: 700;
+    background-color: rgb(164, 71, 251);
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    font-weight: 700;
+    background-color: rgb(178, 95, 255);
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
