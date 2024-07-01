@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <form id="bmiForm">
+            <input type="text" id="weight" placeholder="Enter weight in kg">
+            <input type="text" id="height" placeholder="Enter height in cm">
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+            <p id="result"></p>
+        </form>
+    </div>
+
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value) / 100;
+
+            if (isNaN(weight) || isNaN(height)) {
+                document.getElementById('result').innerText = 'Please Enter Numbers Only';
+                return;
+            }
+
+            const bmi = weight / (height * height);
+            document.getElementById('result').innerText = `Your BMI is ${bmi.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
