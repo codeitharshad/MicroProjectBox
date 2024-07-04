@@ -8,11 +8,19 @@ function App() {
   let [counter, functionToChangeValue] = useState(0)
 
   const addValue = () => {
-    functionToChangeValue(counter+1)
+    if(counter < 20){
+    functionToChangeValue(counter + 1)
+    }else{
+      alert("LIMIT EXCEED!!!")
+    }
   }
 
   const minusValue = () => {
-    functionToChangeValue(counter-1)
+    if(counter > 0){
+      functionToChangeValue(counter - 1)
+    }else{
+      alert("Value cannot be less than ZERO!!!")
+    }
   }
 
 
