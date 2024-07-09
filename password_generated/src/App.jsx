@@ -66,7 +66,6 @@ function App() {
         className='outline-none bg-blue-500 text-white px-3 py0.5 shrink-0 hover:bg-blue-700' >
           Copy
         </button>
-
       </div>
 
       <div className='flex text-sm gap-x-2 '>
