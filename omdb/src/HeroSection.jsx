@@ -18,7 +18,6 @@ const HeroSection = ({ setMovies, movies}) => {
     } else {
       const apikey = import.meta.env.VITE_API_KEY;
       const apiurl = `https://www.omdbapi.com/?apikey=${apikey}&s=${searchTitle}`;
-      console.log(apiurl)
       const response = await fetch(apiurl);
       const data = await response.json();
 

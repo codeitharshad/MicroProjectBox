@@ -6,8 +6,6 @@ const Card = ({ movies}) => {
     window.open(`https://www.imdb.com/title/${id}`, "_blank");
   };
 
-  console.log(movies)
-
   return (
     <section>
       {movies.map((currEle, idx) => {
